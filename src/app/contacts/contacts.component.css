@@ -1,0 +1,11 @@
+h1{
+    font-size: 50px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: rgb(0, 0, 238);
+}
+p{
+    font-size: 20px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color:rgb(71, 71, 236);
+    padding-top: 3px;
+}
