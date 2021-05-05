@@ -2,19 +2,68 @@
     <h1>Contact US</h1>
     <p>We have given our true location, phone number and email address, feel free to call talk to us or come and visiting us.</p>
 </div>
-<div class="container" style="padding: 20px 0px;">
+<div class="container">
     <div class="row" style="margin: 10px 115px">
-      <div class="col-md">
-        <a href="tel:123-456-7890"><i class="fas fa-phone-slash fa-7x"></i><br></a>
-        <p>+91-972694745</p>
+      <div class="col-md-5">
+        <ul>
+          <li>
+            <a href="tel:123-456-7890"><i class="fas fa-phone-slash fa-2x" style="margin-left: 55px; padding-top: 30px; padding-bottom: 10px;"></i><br></a>
+            <p>+91-972694745</p>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/@13.0382935,80.1423129,18z"><i class="fas fa-location-arrow fa-2x" style="margin-left: 55px; padding-top: 30px; padding-bottom: 10px;"></i></a>
+            <p>click the above icon</p>
+          </li>
+          <li>
+            <a href="mailto:sret@sret.com"><i class="fas fa-paper-plane fa-2x" style="margin-left: 55px; padding-top: 30px; padding-bottom: 10px;"></i></a>
+            <p>shop123@gmail.com</p>
+          </li>
+        </ul>
       </div>
-      <div class="col-md">
-        <a href="https://www.google.com/maps/@13.0382935,80.1423129,18z"><i class="fas fa-location-arrow fa-7x" style="width: 30px;"></i></a>
-    <p>click the above link</p>  
+
+      <div class="col-md-7">
+      <h1>Or Leave us a message here</h1>
+      
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input is-link" [(ngModel)]='name' type="text" placeholder="Your name">
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input is-link" type="email" placeholder="Email input" value="@gmail.com">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label">Subject</label>
+          <div class="control">
+            <input class="input is-link" type="text" placeholder="Subject">
+          </div>
+        </div>
+        
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea is-link" placeholder="Enter your message"></textarea>
+          </div>
+        </div>
+                
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-info is-outlined">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-link is-light">Cancel</button>
+          </div>
+        </div>
+
+        <h2>{{msg}}{{name}}.</h2>
     </div>
-      <div class="col-md">
-        <a href="mailto:sret@sret.com"><i class="fas fa-paper-plane fa-7x" style="width: 30px;"></i></a>
-        <p>shop123@gmail.com</p>
-      </div>
-    </div>
-  </div>
+</div>

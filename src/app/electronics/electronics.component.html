@@ -2,32 +2,13 @@
     <div class="container"> 
         <h1>COMPUTER AND ACCESSORIES</h1>
         <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="{{img1}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Epson EcoTank L3150 Wi-Fi All-in-One Ink</h5>
-                    <p class="card-text">229.99$</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="{{img2}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Lenovo Desktop Tower V50S 11HBS00J00 I3 10100 4GB RAM, 1TB HDD, DOS & 3Years Warranty</h5>
-                    <p class="card-text">449$</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="{{img3}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Acer Laptop Aspire 3 A315 42 R3 3200U 4GB 1TB W10 15.6INCH</h5>
-                    <p class="card-text">573.99$</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="{{img4}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Dell Desktop Optiplex 3080 TM Ci3 10100 4GB 1TB NO ODD Ubundu E2020H 19.5inch</h5>
-                    <p class="card-text">899.99$</p>
+            <div class="card-deck">
+                <div class="card" *ngFor='let i of card'>
+                    <img class="card-img-top" src="{{i.img}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{i.title}}</h5>
+                        <p class="card-text">{{i.price}}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -36,36 +17,13 @@
     <div class="container" style="padding: 30px 0px"> 
         <h1>CRAZY DEALS ON SMARTPHONES</h1>
         <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="{{cad1}}" alt="Card image cap">
+            <div class="card" *ngFor='let i of card1'>
+                <img class="card-img-top" src="{{i.img}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Vivo S1 Pro (Black,8GB RAM, 128GB Storage)</h5>
-                    <p class="card-text">299$</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="{{cad2}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Samsung Mobile G980FLBD Galaxy S20 8GB RAM 128GB Storage Light Blue </h5>
-                    <p class="card-text">1049$</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="{{cad3}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Iphone 11(128gb, product red)</h5>
-                    <p class="card-text">699$</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="{{cad4}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">SAMSUNG Metro Dual Sim (black)</h5>
-                    <p class="card-text">35$</p>
+                    <h5 class="card-title">{{i.title}}</h5>
+                    <p class="card-text">{{i.price}}</p>
                 </div>
             </div>
         </div>
-    </div>
-    
-    
-    </body>
+    </div> 
+</body>
